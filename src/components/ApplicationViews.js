@@ -37,7 +37,7 @@ class ApplicationViews extends Component {
   }
 
   deleteAnimal = (id) => {
-    return AnimalManager.removeAndList(id)
+    return AnimalManager.delete(id)
     .then(animals => this.setState({
         animals: animals
       })
